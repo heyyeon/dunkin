@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 아이폰에서 숫자가 전화번호로 인식해서 어둡게 나오는 것을 방지 -->
+  <meta name="format-detection" content="telephone=no">
+  <title>던킨도너츠</title>
+
+  <!-- 1. 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 기본서식 -->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!-- 3. 공통서식 -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- pc -->
+  <link href="./css/pc.css" rel="stylesheet" type="text/css">
+  <!-- tablet -->
+  <link href="./css/tablet.css" rel="stylesheet" type="text/css">
+  <!-- mobile-->
+  <link href="./css/mobile.css" rel="stylesheet" type="text/css">
+  <!-- 아이콘 폰트 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" type="text/css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+  <!-- 토글 -->
+  <input type="checkbox" id="toggle">
+  <!--상단헤더-->
+  <header>
+    <div class="h_top">
+      <h1>
+        <a href="index.html" title="메인페이지로 바로가기"><img src="./images/logo_dunkindonuts.png" alt="상단로고">
+        </a>
+      </h1>
+      <nav class="lnb">
+        <ul>
+          <li><a href="login.html" title="로그인">로그인</a></li>
+          <li><a href="join.html" title="회원가입">회원가입</a></li>
+          <li><a href="search.html" title="검색">Search<img src="./images/icon_search.png" alt="검색">
+          </a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- 전체메뉴 아이콘 -->
+    <label class="fas fa-bars" for="toggle"></label>
+    <!-- 지도 아이콘 -->
+    <a class="map" href="#" title="지도"><i class="fa-solid fa-location-dot"></i></a>
+    <!-- 마이페이지 아이콘 -->
+    <a class="page" href="#" title="마이페이지"><i class="fa-solid fa-user" for="user"></i></a>
+
+    <!-- 2단 내비 -->
+    <div class="h_bottom">
+      <label for="toggle" class="close_btn">
+        <i class="fas fa-times"></i>
+      </label>
+      <nav class="gnb">
+        <ul>
+          <li><a href="#" title="DD Brand">DD Brand</a>
+            <ul class="sub">
+              <li><a href="#" title="브랜드 소개">브랜드 소개</a></li>
+              <li><a href="#" title="브랜드 소식">브랜드 소식</a></li>
+              <li><a href="#" title="미디어 센터">미디어 센터</a></li>
+              <li><a href="#" title="CF">CF</a></li>
+            </ul>
+          </li>
+          <li><a href="#" title="메뉴">메뉴</a>
+            <ul class="sub">
+              <li><a href="#" title="DONUT">DONUT</a></li>
+              <li><a href="#" title="COFFEE">COFFEE</a></li>
+              <li><a href="#" title="SANDWICHES">SANDWICHES</a></li>
+              <li><a href="#" title="BEVERAGE">BEVERAGE</a></li>
+            </ul>
+          </li>
+          <li><a href="#" title="스토어">스토어</a>
+            <ul class="sub">
+              <li><a href="#" title="오프라인 STORE 매장찾기">오프라인 STORE 매장찾기</a></li>
+              <li><a href="#" title="해피오더">해피오더</a></li>
+              <li><a href="#" title="해피E-마켓">해피E-마켓</a></li>
+              <li><a href="#" title="가맹점 개설안내">가맹점 개설안내</a></li>
+              <li><a href="#" title="SPC와 함께하는 던킨">SPC와 함께하는 던킨</a></li>
+              <li><a href="#" title="25년간 사랑받는 던킨">25년간 사랑받는 던킨</a></li>
+              <li><a href="#" title="새로운 출발 안내">새로운 출발 안내</a></li>
+            </ul>
+          </li>
+        <li><a href="#" title="영양정보">영양정보</a>
+          <ul class="sub">
+            <li><a href="#" title="DONUT">DONUT</a></li>
+            <li><a href="#" title="COFFEE">COFFEE</a></li>
+            <li><a href="#" title="SANDWICHES">SANDWICHES</a></li>
+            <li><a href="#" title="BEVERAGE">BEVERAGE</a></li>
+          </ul>
+        </li>
+        <li><a href="#" title="이벤트">이벤트</a>
+          <ul class="sub">
+            <li><a href="#" title="진행중인 이벤트">진행중인 이벤트</a></li>
+            <li><a href="#" title="당첨발표">당첨발표</a></li>
+          </ul>
+        </li>
+        </ul>
+      </nav>
+  </div>
+  </header>
+
+<!-- 메인 콘텐츠 -->
+<main>
+  <article class="m_slide">
+    <h2>메인슬라이드</h2>
+      <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#" title="슬라이드1"><img src="./images/main_banner.png" alt="메인1"></a></div>
+        <div class="swiper-slide"><a href="#" title="슬라이드2"><img src="./images/main_banner2.jpg" alt="메인2"></a></div>
+        <div class="swiper-slide"><a href="#" title="슬라이드3"><img src="./images/main_banner3.jpg" alt="메인3"></a></div>
+        <div class="swiper-slide"><a href="#" title="슬라이드4"><img src="./images/main_banner4.jpg" alt="메인4"></a></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </article>
+
+  <article class="notice">
+    <dl>
+      <dt>공지사항</dt>
+      <dd><img src="./images/notice.png" alt="공지사항애플로고"><a href="#" title="글목록">이제 던킨매장에서도 Apple Pay 결제 가능 </a><span><i class="fa-solid fa-plus"></i></span></dd>
+    </dl>
+  </article>
+<!-- 메뉴 -->
+  <article class="m_menu">
+    <h2 class="tit_menu">
+      <img src="./images/tit_dunkin_menu.png" alt="메뉴 타이틀">
+    </h2>
+    <ul>
+      <li class="m_donut">
+        <img src="./images/menu_donut.png" alt="메뉴_도넛"><a href="#" title="메뉴-도넛"></a>
+        <div class="m_t_donut">
+          <p class="p1">DONUTS</p>
+          <P class="m_btn"><a href="#" title="도넛_더보기">더보기</a></P>
+        </div>
+      </li>
+
+      <li class="m_coffee">
+        <img src="./images/menu_coffee.png" alt="메뉴_커피"><a href="#" title="메뉴_커피"></a>
+        <div class="m_t_coffee">
+          <p class="p1">COFFEE</p>
+          <p class="m_btn"><a href="#" title="커피_더보기">더보기</a></p>
+        </div>
+      </li>
+      
+      <li class="m_sand">
+        <img src="./images/menu_sandwiches.png" alt="메뉴_샌드위치"><a href="#" title="메뉴_샌드위치"></a>
+        <div class="m_t_sand">
+          <p class="p1">SANDWICHES</p>
+          <p class="m_btn"><a href="#" title="샌드위치_더보기">더보기</a></p>
+        </div>
+      </li>
+
+      <li class="m_beve">
+        <img src="./images/menu_beverage.png" alt="메뉴_음료"><a href="#" title="메뉴_음료"></a>
+        <div class="m_t_beve">
+          <p class="p1">BEVERAGES</p>
+          <p class="m_btn"><a href="#" title="음료_더보기">더보기</a></p>
+        </div>
+      </li>
+    </ul>
+  </article>
+
+<!-- new&event -->
+<article class="video">
+  <h2 class="tit_new">
+    <img src="./images/tit_new_event.png" alt="이벤트 비디오">
+  </h2>
+  <section class="new">
+    <iframe class="youtube" width="888" height="500" src="https://www.youtube.com/embed/6txjbEO2JwM?list=PLaoYJk3DWW99y7C6g575JC6X6nfHoeVfT" title="못생겼지만 맛있는 미스터 포테이토 헤드와 함께 하는 던킨의 6월" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="event">
+      <p class="r1">SWEET BREAK</p>
+      <p class="r1">DUNKIN' DONUTS</p>
+      <img src="./images/coffee_donuts.png" alt="커피와 도넛">
+      <p class="r2">잠깐의 여유, 달달한 행복</p>
+
+    </div>
+  </section>
+</article>
+
+<!-- enjoy -->
+<article class="enjoy">
+  <h2 class="tit_enjoy">
+    <img src="./images/tit_dunkin_enjoy.png" alt="해피오더와 해피E-마켓">
+  </h2>
+  <ul class="happy">
+    <li class="order">
+      <img src="./images/product_order1.jpg" alt="해피오더">
+      <p>
+        <span>맛있는 일상을 <br>편안한 장소에서 즐겨보세요.</span>
+        <img src="./images/gnb_happyorder.png" alt="gnb해피오더">
+        <a href="#" title="해피오더">해피오더</a>
+        <span>DELIVERY</span>
+      </p>
+    </li>
+    <li class="market">
+      <img src="./images/product_happymarket1.jpg" alt="해피마켓">
+      <p>
+        <span>당신의 경험을 선물해보세요.<br>&nbsp;</span>
+        <img src="./images/gnb_happyemarket.png" alt="gnb마켓">
+        <a href="#" title="해피마켓">해피E-마켓</a>
+        <span>MOBILE COUPON</span>
+      </p>
+    </li>
+  </ul>
+  </article>
+<div class="d_sns">
+  <img src="./images/tit_dunkin_sns.png" alt="던킨sns">
+  <ul>
+    <li><a href="#" title="페이스북"><img src="./images/icon_facebook.png" alt="페이스북"></a></li>
+    <li><a href="#" title="인스타그램"><img src="./images/icon_insta.png" alt="인스타그램"></a></li>
+    <li><a href="#" title="블로그"><img src="./images/icon_blog.png" alt="블로그"></a></li>
+    <li><a href="#" title="유튜브"><img src="./images/icon_youtu.png" alt="유튜브"></a></li>
+    <li><a href="#" title="트위터"><img src="./images/icon_twi.png" alt="트위터"></a></li>
+  </ul>
+</div>
+
+<!-- 인스타그램 사진 갤러리 -->
+<ul class="insta_g">
+  <li><a href="#"><img src="./images/img1.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img2.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img3.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img4.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img5.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img6.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img7.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img8.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img9.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img10.jpg" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img11.png" alt="인스타그램"></a></li>
+  <li><a href="#"><img src="./images/img12.png" alt="인스타그램"></a></li>
+
+</ul>
+</main>
+
+<!-- 푸터영역 -->
+<footer>
+  <div class="f_top">
+    <a href="#" title="던킨도너츠 로고"><img src="./images/footer_logo.png" alt="던킨도너츠로고"></a> 
+    <nav class="f_nav">
+      <ul>
+        <li><a href="#" title="윤리신고센터">윤리신고센터</a></li>
+        <li><a href="#" title="이용약관">이용약관</a></li>
+        <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+        <li><a href="#" title="영상처리기기운영관리방침">영상처리기기운영관리방침</a></li>
+        <li><a href="#" title="안전보건경영방침">안전보건경영방침</a></li>
+        <li><a href="#" title="이메일무단수집거부">이메일무단수집거부</a></li>
+        <li><a href="#" title="거래희망회사사전등록">거래희망회사사전등록</a></li>
+        <li><a href="#" title="채용안내">채용안내</a></li>
+      </ul>
+    </nav>
+    <select name="FAMILY SITE" id="family_site">
+      <option value="">FAMILY SITE</option>
+      <option value="">SPC그룹</option>
+      <option value="">베스킨라빈스</option>
+      <option value="">파리바게트</option>
+      <option value="">파스구찌</option>
+    </select>
+  </div>
+
+  <address>
+    <p>서울특별시 서초구 남부순환로 2620(양재동 11-149번지)  사업자 등록번호 : 303-81-09535   비알코리아(주) 대표이사 이주연   TEL : 080-555-3131   개인정보관리책임자 : 심수연 <br>
+      COPYRIGHT &copy; 2016 BRKOREA COMPANY. ALL RIGHTS RESERVED.</p>
+  </address>
+</footer>
+
+<!-- 스와이퍼슬라이드 스크립트 -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+
+</body>
+</html>

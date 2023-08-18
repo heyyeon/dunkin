@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* common 서식 */
+
+header{
+  background: #F8FAF0;
+}
+
+
+/* 전체메뉴 아이콘 숨기기  */
+ label.fa-bars, #toggle, .close_btn, 
+ .map, .page{
+  display:none;}
+
+/* 스와이퍼 슬라이드 서식 */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+main .m_slide > h2{display: none;}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 푸터영역 */
+footer{
+  background: #F4F8F9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.f_top, address{
+  width: 1200px;
+  margin: 0px auto;
+}
+.f_top{
+  position: relative;
+}
+.f_top > img{
+  display: flex;
+  height: 60px;
+  padding: 20px 0px;
+}
+.f_top > .f_nav > ul{
+display: flex;
+line-height: 40px;
+}
+.f_top > .f_nav > ul> li{
+  margin-right: 20px;
+}
+address{
+  font-style: normal;
+  line-height: 20px;
+}
+
+#family_site{
+  position: absolute;right: 10px; top: 50px;
+}
+

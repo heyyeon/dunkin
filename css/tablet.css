@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* tablet.css */
+@media screen and (min-width:768px) and (max-width:1024px) {
+  /* 헤더영역 */
+
+  .h_top{width: 100%;}
+  .h_top > h1{
+    padding-left: 30px;
+  }
+   .lnb/* .gnb*/{
+    display:none;
+  } 
+
+  label.fa-bars, .map, .page{
+    display: block;
+    font-size: 36px;
+    padding: 10px;
+  }
+  label.fa-bars{
+    position: absolute;
+    top: 10px;right: 0;
+  }
+  .map{
+    position: absolute;
+    top: 10px;right: 45px;
+  }
+  .page{
+    position: absolute;
+    top: 10px;right: 90px;
+  }
+
+  .gnb>ul{
+    width: 100%;
+  }
+
+  .h_bottom{
+    width: 100%;
+    height: 100%;
+    background: #F8FAF0;
+    position: fixed;
+    top: 0;left: 100%;
+    transition: 0.5s;
+  }
+  .h_bottom:hover{height: 100%;}
+  .close_btn{
+    display: block;
+    position: absolute;
+    left: 2.3%;top: 1.2%;
+    z-index: 1000;
+    padding: 10px;
+    font-size: 36px;
+  }
+
+#toggle:checked+header> .h_bottom{left: 0;}
+
+.gnb{
+  width: 100%;
+  padding-top: 100px;
+  background: none;
+}
+.gnb > ul{
+  display: block;
+  padding: 0px 1.2%;
+}
+.gnb >ul> li{
+  text-indent: 20px;
+  text-align: left;
+  padding: 0;
+}
+.gnb >ul >li:last-child{
+  border-bottom: 1px solid #333;
+}
+.sub{display: none;}
+
+/* 메인 슬라이드 서식 */
+main .m_slide img{
+  height: 600px;
+}
+
+/* 공지사항 */
+.notice> dl> dt{
+  font-size: 1em;
+  padding-left: 2%;
+}
+.notice> dl> dd{
+text-align: center;
+width: 62%;
+}
+
+/* 던킨 메뉴 */
+.m_menu{
+  width: 100%;
+}
+.m_menu>ul{
+  padding: 10px 5px;
+}
+.m_menu>ul>li{
+  margin-left: 10%;
+}
+.video{
+  width: 100%;
+} 
+.new{
+  width: 100%;
+  display: block
+}
+.youtube{
+  width: 90%;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+.new > .event{
+  border-radius: 0;
+  position: relative;
+  margin: 0 auto;
+}
+.enjoy{
+  width: 100%;
+  position: relative;
+}
+.enjoy> ul{
+  display: block;
+  padding-left: 17%;
+}
+.enjoy > ul> .order{
+  padding-bottom: 30px;
+}
+
+.d_sns{
+  width: 100%;
+}
+/* 인스타 갤러리 */
+.insta_g{
+  width: 100%;
+  grid-template-columns: repeat(4, auto);
+}
+.insta_g>li{
+  overflow: hidden;
+  height: 200px;
+  object-fit: cover;
+}
+/* 푸터 */
+.f_top, .f_nav, address{
+  width: 100%;
+}
+.f_top{
+  text-indent: 14px;
+}
+.f_top > .f_nav > ul> li{
+  margin-right: 7px;
+}
+#family_site{
+  top: 10px;
+}
+address{
+  padding: 2px 2%;
+}
+
+
+
+
+
+
+
+}

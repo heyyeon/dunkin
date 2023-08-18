@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* base.css */
+@font-face {
+  font-family: 'TheJamsil2Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil2Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  font-family: 'TheJamsil2Light', sans-serif, arial;
+  font-size: 15px;
+  font-weight:100;
+  color: #212121;
+}
+a{
+  color: #212121;
+  text-decoration: none;
+}
